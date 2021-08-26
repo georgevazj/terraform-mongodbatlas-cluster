@@ -13,7 +13,7 @@ variable "cluster_name" {
 variable "mongodb_version" {
   type = string
   description = "(Optional) MongoDB version. Default: 4.6"
-  default = "4.6"
+  default = "4.2"
 }
 
 variable "cluster_type" {
@@ -29,25 +29,25 @@ variable "region" {
 }
 
 variable "num_shards" {
-  type = int
+  type = number
   description = "(Optional) Number of shards. Default: 1"
   default = 1
 }
 
 variable "electable_nodes" {
-  type = int
+  type = number
   description = "(Optional) Number of electable nodes. Default: 3"
   default = 3
 }
 
 variable "priority" {
-  type = int
+  type = number
   description = "(Optional) Priority. Default: 7"
   default = 7
 }
 
 variable "read_only_nodes" {
-  type = int
+  type = number
   description = "(Optional) Number of read only nodes. Default: 0"
   default = 0
 }

@@ -26,7 +26,7 @@ resource "mongodbatlas_cluster" "cluster" {
       read_only_nodes = var.read_only_nodes
     }
   }
-  provider_backup_enabled = var.provider_backup_enabled
+  cloud_backup = var.provider_backup_enabled
   auto_scaling_disk_gb_enabled = var.auto_scaling_disk_gb_enabled
   auto_scaling_compute_enabled = var.auto_scaling_compute_enabled
 
